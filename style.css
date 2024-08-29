@@ -1,0 +1,186 @@
+
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #222831;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #222831;
+}
+
+.title {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.container1 {
+	width: 100%;
+	height: 500px;
+	background-color: #ececec;
+	position: relative;
+	margin: 0;
+	padding: 0;
+
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #222831;
+
+}
+
+
+
+/* -------------- */
+
+.container2 {
+	background-color: #9fd3c7;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-me-flex { 
+	/* position: absolute; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* flex-basis: 5%; */
+	width: 50%;
+}
+
+#profile-pic {
+	padding-right: 20px;
+}
+
+/* -------------- */
+
+.container3 {
+	background-color: #ececec;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 400px;
+	padding: 5% 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	width: 50%;
+	gap: 20px;
+	place-items: center;
+
+	padding: 0 10%;
+
+}
+
+/* -------------- */
+
+.container4 {
+	background-color: #9fd3c7;
+	padding: 5% 0;
+	width: 100%;
+	height: 500px;
+	font-family: Arial, Helvetica, sans-serif;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.project-flex {
+	/* display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr; */
+	display: flex;
+	width: 50%;
+	column-gap: 1.5rem;
+	justify-content: center;
+	align-items: center;
+
+	padding: 0 10%;
+}
+
+/* -------------- */
+
+.container5 {
+	background-color: #ececec;
+	padding: 5% 0;
+	width: 100%;
+	height: max-content;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container5 > h1 {
+	text-transform: none;
+}
+
+.container5 button {
+	padding: 10%;
+	width: max-content;
+	margin-bottom: 10%;
+	background-color: #9fd3c7;
+	border: none;
+	border-radius: 10%;
+}
+
+.links-flex {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 2rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.translucent-bg {
+	opacity: 0.3;
+	background-color: white;
+	width: 60%;
+	height: 60%;
+	border-radius: 10%;
+}
+
+ @media only screen and (max-width: 768px) {
+	/* Styles for screens less than 768px wide */
+	.about-me-flex {
+		flex-direction: column;
+		font-size: smaller;
+		height: auto;
+		text-align: center;
+	}
+	.container2, .container3, .container4, .container5 {
+	  height: auto; /* Adjust heights for smaller screens */
+	}
+	.skills-grid {
+	  grid-template-columns: 1fr; /*One image per row on mobile */
+	  width: auto;
+	  text-align: center;
+	}
+	.project-flex {
+		flex-direction: column;
+		text-align: center;
+	}
+  }
